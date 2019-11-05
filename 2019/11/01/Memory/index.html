@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   
   
+    <meta name="keywords" content="李宝印,闫秀秀">
+  
+  
+    <meta name="description" content="这是一段关于我自己故事,曾经我们在一起时我说过等我失恋了,我会去失恋博物馆,酸甜苦辣,谢谢你陪我走过">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <title>
@@ -72,6 +76,8 @@
       
         <p>二零一七年，繁夏。</p>
 <p>二零一九年，残秋。</p>
+<a id="more"></a>
+
 <h2 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h2><h3 id="与君初相识，犹如故人来"><a href="#与君初相识，犹如故人来" class="headerlink" title="与君初相识，犹如故人来"></a>与君初相识，犹如故人来</h3><p>2017年，在那个当冰镇雪碧倒入玻璃杯中能沁出水滴，傍晚走在路边也繁花摇曳的季节里。</p>
 <p>我回忆起了那个存在我记忆深处的女孩。</p>
 <p>2013年，我上初二。每天除了想着中午吃个五毛还是一块的雪糕、和（bao）蔼（zao）的班主任董妈最近有没有觉查出我的同步练习是照抄的答案，还有就是和李已疯辩论着哪一个女孩更好看的无聊话题。</p>
@@ -96,6 +102,26 @@
 
   
     
+  <div class="gitalk" id="gitalk-container"></div>
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+  <script type="text/javascript">
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: [''],
+      // id: location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(location.pathname),
+      distractionFreeMode: false,  // Facebook-like distraction free mode
+      pagerDirection: 'last'
+    })
+
+  gitalk.render('gitalk-container')
+  </script>
+
   
 
 </article>
